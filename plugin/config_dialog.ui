@@ -69,7 +69,7 @@
     </widget>
    </item>
    <item row="1" column="0" colspan="2">
-    <widget class="QGroupBox" name="serrAccesGroupBox">
+    <widget class="QGroupBox" name="servAccessGroupBox">
      <property name="title">
       <string>Server acces</string>
      </property>
@@ -172,6 +172,13 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>urlLineEdit</tabstop>
+  <tabstop>usernameLineEdit</tabstop>
+  <tabstop>passwordLineEdit</tabstop>
+  <tabstop>getConfigButton</tabstop>
+  <tabstop>projectsComboBox</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>

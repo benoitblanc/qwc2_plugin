@@ -76,15 +76,15 @@ class ConfigDialog(QDialog):
             projects = [currentProject] + projects
 
         self.projectsComboBox.addItems(projects)
+        self.projectsComboBox.setCurrentText(currentProject)
 
-    def __projectChanged(self, selection):        
+    def __projectChanged(self, selection):
         # save previous ProjectConfig
         if self.__projectConfig is not None:
             if self.__projectIdxInConfig is not None:
                 self.__config['themesConfig']['themes']['items'][self.__projectIdxInConfig] = self.__projectConfig.item()
             self.__projectConfig.setParent(None)
             self.__projectConfig = None
-
 
         # replace ProjectConfig
         for i, item in enumerate(self.__config['themesConfig']['themes']['items']):

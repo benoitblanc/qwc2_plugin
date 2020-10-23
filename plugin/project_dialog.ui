@@ -16,14 +16,7 @@
   <layout class="QGridLayout" name="gridLayout_2">
    <item row="0" column="0">
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="scalesLabel">
-       <property name="text">
-        <string>Scales</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
+     <item row="1" column="1">
       <widget class="QLineEdit" name="scaleLineEdit">
        <property name="text">
         <string/>
@@ -33,7 +26,14 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="0">
+     <item row="6" column="1">
+      <widget class="QCheckBox" name="coordinatesCheckBox">
+       <property name="text">
+        <string>coordinates</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
       <widget class="QGroupBox" name="backgroundGroupBox">
        <property name="layoutDirection">
         <enum>Qt::LeftToRight</enum>
@@ -41,41 +41,82 @@
        <property name="title">
         <string>Backgrounds</string>
        </property>
-       <layout class="QVBoxLayout" name="backgroundLayout"/>
+       <layout class="QVBoxLayout" name="backgroundLayout">
+        <item>
+         <widget class="QTableWidget" name="backgroundTable">
+          <attribute name="horizontalHeaderVisible">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Use</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Background</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Print Layer</string>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
       </widget>
      </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="backgroundLabel">
-       <property name="text">
-        <string>Default background</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QComboBox" name="backgroundComboBox"/>
-     </item>
-     <item row="5" column="0">
+     <item row="5" column="1">
       <widget class="QLabel" name="providersLabel">
        <property name="text">
         <string>Providers</string>
        </property>
       </widget>
      </item>
-     <item row="6" column="0">
-      <widget class="QCheckBox" name="coordinatesCheckBox">
-       <property name="text">
-        <string>coordinates</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="0">
+     <item row="7" column="1">
       <widget class="QCheckBox" name="nominatimCheckBox">
        <property name="text">
         <string>nominatim</string>
        </property>
       </widget>
      </item>
-     <item row="8" column="0">
+     <item row="0" column="1">
+      <widget class="QLabel" name="scalesLabel">
+       <property name="text">
+        <string>Scales</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="backgroundLabel">
+       <property name="text">
+        <string>Default background</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="backgroundComboBox"/>
+     </item>
+     <item row="9" column="1">
       <spacer name="verticalSpacer">
        <property name="orientation">
         <enum>Qt::Vertical</enum>
